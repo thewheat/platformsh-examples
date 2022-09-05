@@ -1,0 +1,5 @@
+# This file defines services you want available to your application.
+
+dbpostgres:
+    type: postgresql:13
+    disk: 256
