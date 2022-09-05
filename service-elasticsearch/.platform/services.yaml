@@ -1,0 +1,5 @@
+# This file defines services you want available to your application.
+
+searchelastic:
+    type: elasticsearch:7.10
+    disk: 256
