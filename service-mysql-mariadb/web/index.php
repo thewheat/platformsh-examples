@@ -82,12 +82,18 @@ if($conn != null){
             print "</tbody>\n</table>\n";
         }
     
+    } catch (\Exception $e) {
+        print "<h3>Error retrieving data from table</h3>";
+        print $e->getMessage();
+    }
+
+    try {
         // Drop table
         $sql = "DROP TABLE People";
         $conn->query($sql);
     
     } catch (\Exception $e) {
-        print "<h3>Error retrieving data from table</h3>";
+        print "<h3>Error dropping table</h3>";
         print $e->getMessage();
     }
 }
