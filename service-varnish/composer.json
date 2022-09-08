@@ -1,0 +1,14 @@
+{
+    "name": "platformsh/starter",
+    "description": "A basic starter kit for any PHP application.",
+    "license": "MIT",
+    "type" : "project",
+    "require": {
+        "php": ">7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

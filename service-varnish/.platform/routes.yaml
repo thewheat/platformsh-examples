@@ -1,0 +1,24 @@
+# The routes of the project.
+#
+# Each route describes how an incoming URL is going
+# to be processed by Platform.sh.
+
+"https://{default}/":
+    type: upstream
+    upstream: "varnish:http"
+    cache:
+        enabled: false
+
+"https://www.{default}/":
+    type: redirect
+    to: "https://{default}/"
+
+"https://uncached.{default}/":
+    type: upstream
+    upstream: "app:http"
+
+"https://cached.{default}/":
+    type: upstream
+    upstream: "varnish:http"
+    cache:
+        enabled: false
