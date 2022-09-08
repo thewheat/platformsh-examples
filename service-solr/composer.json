@@ -1,0 +1,17 @@
+{
+    "name": "platformsh/starter",
+    "description": "A basic starter kit for any PHP application.",
+    "license": "MIT",
+    "type" : "project",
+    "require": {
+        "php": ">7.2",
+        "platformsh/config-reader": "~2.0",
+        "solarium/solarium": "^6.2",
+        "symfony/event-dispatcher": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
