@@ -1,0 +1,15 @@
+{
+    "name": "platformsh/starter",
+    "description": "A basic starter kit for any PHP application.",
+    "license": "MIT",
+    "type" : "project",
+    "require": {
+        "platformsh/config-reader": "^2.4",
+        "mongodb/mongodb": "^1.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
